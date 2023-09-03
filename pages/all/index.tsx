@@ -1,3 +1,5 @@
+"use client";
+
 import { index } from "@/algolia/config";
 import RootLayout from "@/app/layout";
 import { HitProducts } from "@/components/HitProducts";
