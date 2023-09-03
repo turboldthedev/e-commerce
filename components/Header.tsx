@@ -7,7 +7,6 @@ import {
   Bars3Icon,
   MagnifyingGlassIcon,
   ShoppingCartIcon,
-  UserIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { Fragment, useState } from "react";
@@ -296,7 +295,7 @@ export const Header = () => {
                 <div className="flex h-16 items-center justify-between">
                   {/* Logo (lg+) */}
                   <div className="hidden lg:flex lg:items-center">
-                    <a href="#">
+                    <a href="/">
                       <span className="sr-only">Your Company</span>
                       <img
                         className="h-8 w-auto"
@@ -503,28 +502,25 @@ export const Header = () => {
 
                   <div className="flex flex-1 items-center justify-end">
                     <div className="flex items-center lg:ml-8">
-                      <div className="flex space-x-8">
-                        <div className="hidden lg:flex">
-                          <a
-                            href="#"
-                            className="-m-2 p-2 text-gray-400 hover:text-gray-500">
-                            <span className="sr-only">Search</span>
-                            <MagnifyingGlassIcon
-                              className="h-6 w-6"
-                              aria-hidden="true"
-                            />
-                          </a>
-                        </div>
-
-                        <div className="flex">
-                          <a
-                            href="#"
-                            className="-m-2 p-2 text-gray-400 hover:text-gray-500">
-                            <span className="sr-only">Account</span>
-                            <UserIcon className="h-6 w-6" aria-hidden="true" />
-                          </a>
-                        </div>
-                      </div>
+                      <form
+                        className="relative flex flex-1 outline-none  border-gray-400 mb-0"
+                        action="/all"
+                        method="GET">
+                        <label htmlFor="search-field" className="sr-only">
+                          Search
+                        </label>
+                        <MagnifyingGlassIcon
+                          className="pointer-events-none absolute inset-y-0 left-0 h-full w-5 text-gray-400"
+                          aria-hidden="true"
+                        />
+                        <input
+                          id="search-field"
+                          className="outline-none block h-full w-full border-0 py-3 pl-8 pr-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm"
+                          placeholder="Search..."
+                          type="search"
+                          name="search"
+                        />
+                      </form>
 
                       <span
                         className="mx-4 h-6 w-px bg-gray-200 lg:mx-6"
