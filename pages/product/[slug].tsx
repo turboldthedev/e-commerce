@@ -7,7 +7,7 @@ import {
   CurrencyDollarIcon,
   GlobeAmericasIcon,
 } from "@heroicons/react/24/outline";
-import RootLayout from "@/app/layout";
+import RootLayout from "@/components/layout";
 
 const product = {
   name: "Basic Tee",

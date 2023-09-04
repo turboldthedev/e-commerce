@@ -3,7 +3,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Footer } from "@/components/Footer";
 
-
 export const metadata: Metadata = {
   title: "E Commerce",
   description: "E commerce for kitchen cabinet and stone factory",
@@ -15,10 +14,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
-      <Header />
-      {children}
-      <Footer />
-    </div>
+    <html lang="en">
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
+    </html>
   );
 }

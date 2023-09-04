@@ -1,7 +1,7 @@
 "use client";
 
 import { index } from "@/algolia/config";
-import RootLayout from "@/app/layout";
+import RootLayout from "@/components/layout";
 import { HitProducts } from "@/components/HitProducts";
 import { Menu, Popover, Transition } from "@headlessui/react";
 import {
@@ -11,6 +11,7 @@ import {
   MagnifyingGlassIcon,
 } from "@heroicons/react/20/solid";
 import { Fragment, useEffect, useState } from "react";
+import Layout from "@/components/layout";
 
 const sortOptions = [
   { name: "Most Popular", href: "#" },
@@ -124,7 +125,7 @@ export default function AllProduct() {
   };
 
   return (
-    // <RootLayout>
+    <Layout>
       <main
         className="mx-auto max-w-2xl px-4 py-24 sm:px-6 lg:max-w-7xl lg:px-8"
         aria-labelledby="order-history-heading">
@@ -355,7 +356,6 @@ export default function AllProduct() {
           </div>
         )}
       </main>
-    // {/* </RootLayout> */}
-  
+    </Layout>
   );
 }
