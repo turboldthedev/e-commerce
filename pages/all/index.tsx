@@ -124,7 +124,7 @@ export default function AllProduct() {
   };
 
   return (
-    <RootLayout>
+    // <RootLayout>
       <main
         className="mx-auto max-w-2xl px-4 py-24 sm:px-6 lg:max-w-7xl lg:px-8"
         aria-labelledby="order-history-heading">
@@ -355,6 +355,7 @@ export default function AllProduct() {
           </div>
         )}
       </main>
-    </RootLayout>
+    // {/* </RootLayout> */}
+  
   );
 }
