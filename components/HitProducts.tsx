@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FC } from "react";
 
 interface HitProps {
@@ -24,10 +25,10 @@ export const HitProducts: FC<HitProps> = ({ hit }) => {
         />
       </div>
       <h3 className="mt-4 text-sm text-gray-500">
-        <a href="/product/product-test">
+        <Link href={`/products/${hit.objectID}`}>
           <span className="absolute inset-0" />
           {hit.brand}
-        </a>
+        </Link>
       </h3>
       <p className="mt-1 text-lg font-medium">
         <span className="text-indigo-600">{hit.name}</span>

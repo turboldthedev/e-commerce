@@ -20,7 +20,7 @@ export default function Home() {
                 role="list"
                 className="grid grid-cols-1 divide-y divide-gray-200 lg:grid-cols-3 lg:divide-x lg:divide-y-0">
                 {offers.map((offer) => (
-                  <li key={offer.name} className="flex flex-col">
+                  <li key={offer.name} className="flex flex-col"> 
                     <a
                       href={offer.href}
                       className="relative flex flex-1 flex-col justify-center bg-white px-4 py-6 text-center focus:z-10">
@@ -83,7 +83,7 @@ export default function Home() {
               Shop by Category
             </h2>
             <a
-              href="#"
+              href="/products"
               className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
               Browse all categories
               <span aria-hidden="true"> &rarr;</span>
@@ -139,7 +139,7 @@ export default function Home() {
                 Trending products
               </h2>
               <a
-                href="/all"
+                href="/products"
                 className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
                 See everything
                 <span aria-hidden="true"> &rarr;</span>
@@ -198,7 +198,7 @@ export default function Home() {
 
             <div className="mt-12 px-4 sm:hidden">
               <a
-                href="/all"
+                href="/products"
                 className="text-sm font-semibold text-indigo-600 hover:text-indigo-500">
                 See everything
                 <span aria-hidden="true"> &rarr;</span>

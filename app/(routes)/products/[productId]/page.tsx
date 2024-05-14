@@ -92,7 +92,7 @@ export default function Example() {
   const [selectedSize, setSelectedSize] = useState(product.sizes[2]);
 
   return (
-    <Layout>
+
       <div className="bg-white">
         <div className="pb-16 pt-6 sm:pb-24">
           <nav
@@ -355,6 +355,6 @@ export default function Example() {
           </div>
         </div>
       </div>
-    </Layout>
+
   );
 }
